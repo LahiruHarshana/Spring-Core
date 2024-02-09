@@ -1,17 +1,19 @@
 package lk.ijse.spring.bean;
 
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 @Component
+@Scope("prototype")
 public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
+
     public SpringBean() {
         System.out.println("SpringBean Instantiated");
 
@@ -41,8 +43,6 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("ApplicationContextAware.setApplicationContext() : " + applicationContext);
     }
-
-
     @PostConstruct
     public void initialize(){
         System.out.println("@PostConstruct");

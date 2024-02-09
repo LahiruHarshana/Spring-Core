@@ -29,7 +29,7 @@ public class Sachini implements GoodGirl, BeanNameAware, BeanFactoryAware, Initi
 
     @Override
     public void destroy() throws Exception {
-
+        System.out.println("DisposableBean.destroy()"+this);
     }
 
     @Override

@@ -10,7 +10,6 @@ public class AppInitializer {
         ctx.refresh();
         boolean javaBean = ctx.containsBeanDefinition("getJavaBean");
         System.out.println(javaBean);
-
         ctx.close();
     }
 }

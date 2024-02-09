@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Scope;
 public class AppConfig {
 
 
-    @Scope("prototype")
+    @Scope("singleton")
     @Bean
     JavaBean getJavaBean() {
 

@@ -1,5 +1,7 @@
-public class Manithi {
-    public void loveHime(){
-        System.out.println("I love you");
+public class Manithi implements Girl {
+
+    @Override
+    public void chat() {
+        System.out.println("Manithi is chatting with you");
     }
 }

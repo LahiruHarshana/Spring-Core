@@ -8,7 +8,8 @@ public class AppInitializer {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
-        Object getJavaBean = ctx.getBean("getJavaBean");
+        boolean javaBean = ctx.containsBeanDefinition("getJavaBean");
+        System.out.println(javaBean);
 
         ctx.close();
     }

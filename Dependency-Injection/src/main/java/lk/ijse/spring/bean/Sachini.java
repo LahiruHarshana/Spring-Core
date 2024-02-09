@@ -18,11 +18,12 @@ public class Sachini implements GoodGirl, BeanNameAware, BeanFactoryAware, Initi
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-
+        System.out.println("BeanFactoryAware.setBeanFactory() : " + beanFactory);
     }
 
     @Override
     public void setBeanName(String name) {
+        System.out.println("BeanNameAware.setBeanName(): " + name);
 
     }
 

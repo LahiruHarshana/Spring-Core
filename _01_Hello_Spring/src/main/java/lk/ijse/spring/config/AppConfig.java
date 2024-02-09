@@ -1,8 +1,5 @@
 package lk.ijse.spring.config;
 
-
-import com.edu.ijse.Bean;
-import lk.ijse.spring.pojo.PojoOne;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,7 +10,7 @@ import java.beans.JavaBean;
 //@ComponentScan(basePackageClasses = {PojoOne.class, Bean.class})
 @ComponentScan
 public class AppConfig {
-//
+
 
     public JavaBean getJavaBean(){
         return new JavaBean();

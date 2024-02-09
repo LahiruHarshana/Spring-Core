@@ -12,6 +12,8 @@ public class AppInitializer {
         Object getJavaBean1 = ctx.getBean("getJavaBean");
         Object getJavaBean2 = ctx.getBean("getJavaBean");
         Object getJavaBean3 = ctx.getBean("getJavaBean");
+        PojoOne bean = ctx.getBean(PojoOne.class);
+        System.out.println(bean);
 
         System.out.println(getJavaBean1);
         System.out.println(getJavaBean2);

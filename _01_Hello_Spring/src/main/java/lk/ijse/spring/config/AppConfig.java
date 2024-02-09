@@ -5,6 +5,7 @@ import lk.ijse.spring.pojo.PojoOne;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 //@ComponentScan(basePackages = {"lk.ijse.spring","com.edu.ijse"})
@@ -14,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
 
+    @Scope("prototype")
     @Bean
     JavaBean getJavaBean() {
 

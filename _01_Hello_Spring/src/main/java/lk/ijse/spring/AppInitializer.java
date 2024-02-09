@@ -9,7 +9,7 @@ public class AppInitializer {
         ctx.refresh();
 
         boolean javaBean =
-                ctx.containsBeanDefinition("javaBean");
+                ctx.containsBeanDefinition("getJavaBean");
         boolean pojoOne =
                 ctx.containsBeanDefinition("pojoOne");
         System.out.println("JavaBean : " + javaBean);

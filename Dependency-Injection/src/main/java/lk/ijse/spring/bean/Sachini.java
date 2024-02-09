@@ -34,6 +34,6 @@ public class Sachini implements GoodGirl, BeanNameAware, BeanFactoryAware, Initi
 
     @Override
     public void afterPropertiesSet() throws Exception {
-
+        System.out.println("InitializingBean.afterPropertiesSet()");
     }
 }

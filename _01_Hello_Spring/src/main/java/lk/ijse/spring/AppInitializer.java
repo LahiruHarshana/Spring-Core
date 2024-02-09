@@ -7,6 +7,9 @@ public class AppInitializer {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
+
+        boolean javaBean =
+                ctx.containsBeanDefinition("javaBean");
         ctx.close();
     }
 }

@@ -1,5 +1,7 @@
 package lk.ijse.spring.config;
 
+import com.edu.ijse.javaBean;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,7 +14,11 @@ import java.beans.JavaBean;
 public class AppConfig {
 
 
-    public JavaBean getJavaBean(){
-        return new JavaBean();
+    @Bean
+    public javaBean getJavaBean() {
+
+        javaBean javaBean = new javaBean();
+        return javaBean;
     }
+
 }

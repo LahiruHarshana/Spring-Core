@@ -13,7 +13,7 @@ public class AppConfig {
 
 
     @Bean
-    public JavaBean getJavaBean() {
+    JavaBean getJavaBean() {
 
         JavaBean javaBean = new JavaBean();
         return javaBean;

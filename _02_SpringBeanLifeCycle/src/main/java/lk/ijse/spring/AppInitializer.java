@@ -12,5 +12,9 @@ public class AppInitializer {
         System.out.println(springBean);
 
 
+        Object springBean1 = ctx.getBean("springBean");
+        System.out.println(springBean1);
+
+
     }
 }

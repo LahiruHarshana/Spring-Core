@@ -1,7 +1,9 @@
 package lk.ijse.spring;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 public class AppInitializer {
     public static void main(String[] args) {
-        System.out.println("Hello Spring");
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
     }
 }

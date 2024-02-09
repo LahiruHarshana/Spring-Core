@@ -11,8 +11,9 @@ import org.springframework.stereotype.Component;
 public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
     public SpringBean() {
         System.out.println("SpringBean Instantiated");
-    }
 
+
+    }
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println("BeanFactoryAware.setBeanFactory() : " + beanFactory);

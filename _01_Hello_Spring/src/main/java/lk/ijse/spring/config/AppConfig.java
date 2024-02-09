@@ -10,7 +10,8 @@ import java.beans.JavaBean;
 
 @Configuration
 //@ComponentScan(basePackages = {"lk.ijse.spring","com.edu.ijse"})
-@ComponentScan(basePackageClasses = {PojoOne.class, Bean.class})
+//@ComponentScan(basePackageClasses = {PojoOne.class, Bean.class})
+@ComponentScan
 public class AppConfig {
 //
 

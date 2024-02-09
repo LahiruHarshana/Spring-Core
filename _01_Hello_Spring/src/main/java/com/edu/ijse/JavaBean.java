@@ -1,7 +1,7 @@
 package com.edu.ijse;
 
-public class javaBean {
-    public javaBean() {
+public class JavaBean {
+    public JavaBean() {
         System.out.println("javaBean Instantiated");
     }
 }

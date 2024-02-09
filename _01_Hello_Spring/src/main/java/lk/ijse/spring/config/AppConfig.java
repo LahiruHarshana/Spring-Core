@@ -1,11 +1,9 @@
 package lk.ijse.spring.config;
 
-import com.edu.ijse.javaBean;
+import com.edu.ijse.JavaBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-
-import java.beans.JavaBean;
 
 @Configuration
 //@ComponentScan(basePackages = {"lk.ijse.spring","com.edu.ijse"})
@@ -15,9 +13,9 @@ public class AppConfig {
 
 
     @Bean
-    public javaBean getJavaBean() {
+    public JavaBean getJavaBean() {
 
-        javaBean javaBean = new javaBean();
+        JavaBean javaBean = new JavaBean();
         return javaBean;
     }
 

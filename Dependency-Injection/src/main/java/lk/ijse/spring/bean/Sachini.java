@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Sachini {
     public Sachini() {
-        System.out.println("Sachini Instantiated....");
+        System.out.println("sachini - Constructor");
     }
 }

@@ -14,7 +14,7 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
     //    @Autowired
     private GoodGirl goodGirl;
 
-    //    @Autowired
+        @Autowired
     public Boy(GoodGirl goodGirl) {
         this.goodGirl = goodGirl;
         System.out.println("Boy - Constructor");
@@ -22,10 +22,10 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
 
     }
 
-    @Autowired
-    public void setGoodGirl(GoodGirl goodGirl) {
-        this.goodGirl = goodGirl;
-    }
+//    @Autowired
+//    public void setGoodGirl(GoodGirl goodGirl) {
+//        this.goodGirl = goodGirl;
+//    }
 
     @PostConstruct
     public void initialize() {

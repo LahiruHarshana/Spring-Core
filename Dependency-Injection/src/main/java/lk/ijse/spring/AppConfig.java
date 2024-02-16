@@ -16,4 +16,9 @@ public class AppConfig {
     public String myString2() {
         return "Hello Spring2";
     }
+
+    @Bean
+    public String myString3() {
+        return "Hello Spring3";
+    }
 }

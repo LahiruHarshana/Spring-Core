@@ -8,7 +8,12 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class AppConfig {
     @Bean
-    public String myString(){
-        return "Hello Spring";
+    public String myString1(){
+        return "Hello Spring1";
+    }
+
+    @Bean
+    public String myString2() {
+        return "Hello Spring2";
     }
 }

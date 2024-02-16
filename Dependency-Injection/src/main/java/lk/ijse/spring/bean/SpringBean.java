@@ -7,6 +7,6 @@ import java.util.Arrays;
 @Component
 public class SpringBean {
     SpringBean(String []name){
-        System.out.println(Arrays.toString(name);
+        System.out.println(Arrays.toString(name));
     }
 }

@@ -11,11 +11,15 @@ import org.springframework.stereotype.Component;
 @Component("Lahiru")
 public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
-    @Autowired
+//    @Autowired
     private GoodGirl goodGirl;
-    public Boy() {
+
+    @Autowired
+    public Boy(GoodGirl goodGirl) {
+        this.goodGirl = goodGirl;
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a girl friend? " + goodGirl);
+
     }
 
     @Autowired

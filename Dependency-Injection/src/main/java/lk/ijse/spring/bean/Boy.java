@@ -22,11 +22,6 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
 
     }
 
-//    @Autowired
-//    public void setGoodGirl(GoodGirl goodGirl) {
-//        this.goodGirl = goodGirl;
-//    }
-
     @PostConstruct
     public void initialize() {
         System.out.println("Have I got a girl friend? " + goodGirl);

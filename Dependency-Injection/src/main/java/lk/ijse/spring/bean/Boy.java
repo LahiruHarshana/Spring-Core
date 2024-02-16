@@ -20,7 +20,6 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
         this.goodGirl = goodGirl;
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a girl friend? " + goodGirl);
-
     }
 
     @PostConstruct

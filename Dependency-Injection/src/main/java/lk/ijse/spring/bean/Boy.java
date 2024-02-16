@@ -1,6 +1,7 @@
 package lk.ijse.spring.bean;
 
 import jakarta.annotation.PostConstruct;
+import lk.ijse.spring.bean.util.WhiteFace;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
     private GoodGirl goodGirl;
 
     @Autowired
-    public Boy(@Qualifier("long hair") GoodGirl goodGirl) {
+    public Boy(@Qualifier("long hair") @WhiteFace GoodGirl goodGirl) {
         this.goodGirl = goodGirl;
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a girl friend? " + goodGirl);

@@ -15,8 +15,8 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
     //    @Autowired
     private GoodGirl goodGirl;
 
-        @Autowired
-    public Boy(@Qualifier("sachini") GoodGirl goodGirl) {
+    @Autowired
+    public Boy(@Qualifier("long hair") GoodGirl goodGirl) {
         this.goodGirl = goodGirl;
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a girl friend? " + goodGirl);

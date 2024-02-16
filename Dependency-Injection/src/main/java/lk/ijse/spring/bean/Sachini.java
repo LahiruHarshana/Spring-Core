@@ -3,11 +3,13 @@ package lk.ijse.spring.bean;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
 @Primary
+@Qualifier("long hair")
 public class Sachini implements GoodGirl, BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean {
     public Sachini() {
         System.out.println("sachini - Constructor");

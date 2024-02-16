@@ -3,6 +3,7 @@ package lk.ijse.spring;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 @ComponentScan
@@ -13,6 +14,7 @@ public class AppConfig {
     }
 
     @Bean
+    @Primary
     public String myString2() {
         return "Hello Spring2";
     }

@@ -23,7 +23,7 @@ public class SpringBean4 implements BeanNameAware, BeanFactoryAware, Application
 
     @Override
     public void destroy() throws Exception {
-
+        System.out.println("DisposableBean.destroy()");
     }
 
     @Override

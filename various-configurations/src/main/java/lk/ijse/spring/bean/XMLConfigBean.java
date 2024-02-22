@@ -7,7 +7,6 @@ public class XMLConfigBean {
     public XMLConfigBean() {
         System.out.println("XML Config Bean Instantiated...");
     }
-
     public void setName(String name) {
         System.out.println("Name : " + name);
     }

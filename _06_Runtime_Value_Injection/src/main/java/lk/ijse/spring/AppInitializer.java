@@ -13,5 +13,9 @@ public class AppInitializer {
         ctx.registerShutdownHook();
 
         Map<String, String> getenv = System.getenv();
+        for (Map.Entry<String, String> entry : getenv.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+
     }
 }

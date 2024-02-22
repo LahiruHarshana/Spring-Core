@@ -1,4 +1,4 @@
-package lk.ijse.spring.bo;
+package lk.ijse.spring;
 
 public class BOConfig {
 

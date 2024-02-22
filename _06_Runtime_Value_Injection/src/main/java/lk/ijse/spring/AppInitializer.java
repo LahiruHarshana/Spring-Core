@@ -19,10 +19,10 @@ public class AppInitializer {
 //            System.out.println(entry.getKey() + " : " + entry.getValue());
 //        }
 //
-//        Properties properties = System.getProperties();
-//
-//        for (Map.Entry<Object, Object> entry : properties.entrySet()) {
-//            System.out.println(entry.getKey() + " : " + entry.getValue());
-//        }
+        Properties properties = System.getProperties();
+
+        for (Map.Entry<Object, Object> entry : properties.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
     }
 }

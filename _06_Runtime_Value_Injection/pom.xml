@@ -3,19 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>lk.ijse.inClassPractise</groupId>
+        <artifactId>SpringInClassPractise</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>lk.ijse.inClassPractise</groupId>
-    <artifactId>SpringInClassPractise</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_01_Hello_Spring</module>
-        <module>_02_SpringBeanLifeCycle</module>
-        <module>Dependency-Injection</module>
-        <module>_04_full-mode-vs-lightmode</module>
-        <module>various-configurations</module>
-        <module>_06_Runtime_Value_Injection</module>
-    </modules>
+    <groupId>lk.ijse.spring</groupId>
+    <artifactId>_06_Runtime_Value_Injection</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -29,6 +24,19 @@
             <artifactId>spring-aop</artifactId>
             <version>6.1.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>3.0.0-M1</version>
+        </dependency>
+
 
     </dependencies>
 

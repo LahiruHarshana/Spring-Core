@@ -17,7 +17,6 @@ public class SpringBean3 {
     public void init(){
         System.out.println("SpringBean3 Initialized....");
         String name = environment.getProperty("app.env1");
-        String name2 = environment.getRequiredProperty("app.env2");
         System.out.println(name);
     }
 }

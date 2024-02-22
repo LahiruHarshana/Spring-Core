@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Configuration
 @ComponentScan
 public class AppConfig {
-    @Bean
+    @
     public String name(){
         return "SpringBean1";
     }

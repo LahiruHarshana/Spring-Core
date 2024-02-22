@@ -28,7 +28,7 @@ public class SpringBean4 implements BeanNameAware, BeanFactoryAware, Application
 
     @Override
     public void afterPropertiesSet() throws Exception {
-
+        System.out.println("InitializingBean.afterPropertiesSet()");
     }
 
     @Override

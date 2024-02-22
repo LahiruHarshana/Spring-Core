@@ -10,15 +10,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 public class AppConfig {
-//    @Bean
-//    public SpringBean2 springBean2(){
-//        return new SpringBean2(springBean4());
-//
-//    }
-//    @Bean
-//    public SpringBean4 springBean4(){
-//        return new SpringBean4();
-//    }
+    @Bean
+    public SpringBean2 springBean2(){
+        return new SpringBean2(springBean4());
+
+    }
+    @Bean
+    public SpringBean4 springBean4(){
+        return new SpringBean4();
+    }
 
     public String myName(){
         System.out.println("My Name Method Called...");

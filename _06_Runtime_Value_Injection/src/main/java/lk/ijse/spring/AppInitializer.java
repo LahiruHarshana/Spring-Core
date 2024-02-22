@@ -10,6 +10,4 @@ public class AppInitializer {
         ctx.refresh();
         ctx.registerShutdownHook();
     }
-
-
 }

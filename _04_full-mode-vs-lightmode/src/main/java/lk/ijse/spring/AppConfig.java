@@ -10,8 +10,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 public class AppConfig {
-
-
     @Bean
     public SpringBean2 springBean2(){
         return new SpringBean2(springBean4());

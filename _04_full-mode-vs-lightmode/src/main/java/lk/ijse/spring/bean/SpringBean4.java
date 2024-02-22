@@ -33,6 +33,6 @@ public class SpringBean4 implements BeanNameAware, BeanFactoryAware, Application
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-
+        System.out.println("ApplicationContextAware.setApplicationContext()");
     }
 }

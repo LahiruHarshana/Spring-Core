@@ -16,6 +16,8 @@ public class SpringBean1 {
     }
 
     @PostConstruct
-
+    public void init(){
+        System.out.println("SpringBean1 Initialized....");
+    }
 
 }

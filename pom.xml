@@ -13,6 +13,7 @@
         <module>_02_SpringBeanLifeCycle</module>
         <module>Dependency-Injection</module>
         <module>_04_full-mode-vs-lightmode</module>
+        <module>various-configurations</module>
     </modules>
 
     <properties>

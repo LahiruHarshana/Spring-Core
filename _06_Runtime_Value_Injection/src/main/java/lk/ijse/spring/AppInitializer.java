@@ -12,12 +12,12 @@ public class AppInitializer {
         ctx.register(AppConfig.class);
         ctx.refresh();
         ctx.registerShutdownHook();
-//
-//        Map<String, String> getenv = System.getenv();
-//
-//        for (Map.Entry<String, String> entry : getenv.entrySet()) {
-//            System.out.println(entry.getKey() + " : " + entry.getValue());
-//        }
+
+        Map<String, String> getenv = System.getenv();
+
+        for (Map.Entry<String, String> entry : getenv.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
 //
 //        Properties properties = System.getProperties();
 //

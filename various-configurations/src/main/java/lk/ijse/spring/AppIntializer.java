@@ -1,6 +1,5 @@
 package lk.ijse.spring;
 
-import lk.ijse.spring.dao.DaoConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppIntializer {

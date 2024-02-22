@@ -1,4 +1,4 @@
-package lk.ijse.spring;
+package lk.ijse.spring.dao;
 
 public class DaoConfig {
 }

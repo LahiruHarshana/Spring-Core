@@ -16,7 +16,7 @@ public class SpringBean3 {
     @PostConstruct
     public void init(){
         System.out.println("SpringBean3 Initialized....");
-        String name = environment.getProperty("app.env1");
+        String name = environment.getProperty("z");
         System.out.println(name);
     }
 }

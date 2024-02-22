@@ -18,4 +18,27 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>6.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>3.0.0-M1</version>
+        </dependency>
+
+
+    </dependencies>
+
 </project>

@@ -10,6 +10,5 @@ public class AppIntializer {
         ctx.register(DaoConfig.class);
         ctx.refresh();
         ctx.registerShutdownHook();
-
     }
 }

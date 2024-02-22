@@ -22,10 +22,10 @@ public class SpringBean1 {
         System.out.println(age2);
         System.out.println(age3);
         System.out.println(salary2);
+
         for (int number : numbers) {
             System.out.println(number);
         }
-
     }
 
     @PostConstruct

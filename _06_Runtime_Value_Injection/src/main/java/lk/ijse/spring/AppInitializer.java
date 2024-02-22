@@ -11,7 +11,6 @@ public class AppInitializer {
         ctx.registerShutdownHook();
     }
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-    ctx.register(AppConfig.class);
 
 
 }

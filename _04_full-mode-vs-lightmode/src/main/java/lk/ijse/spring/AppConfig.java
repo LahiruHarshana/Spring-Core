@@ -2,6 +2,7 @@ package lk.ijse.spring;
 
 import lk.ijse.spring.bean.SpringBean2;
 import lk.ijse.spring.bean.SpringBean4;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +14,7 @@ public class AppConfig {
 
     @Bean
     public SpringBean2 springBean2(){
-        return new SpringBean2();
+        return new SpringBean2(new SpringBean4());
     }
 
     @Bean

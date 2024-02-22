@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ImportResource;
 @ComponentScan("lk.ijse.spring.bean")
 @ImportResource("classpath:context.xml")
 @Import({BOConfig.class, DaoConfig.class})
+
 public class AppConfig {
 
 }

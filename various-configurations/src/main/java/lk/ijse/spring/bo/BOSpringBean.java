@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BOSpringBean {
-    BOSpringBean() {
+    public BOSpringBean() {
         System.out.println("BOSpringBean Instantiated via Spring");
     }
 }

@@ -41,7 +41,6 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
     public void destroy() throws Exception {
         System.out.println("DisposableBean.destroy()" + this);
     }
-
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("InitializingBean.afterPropertiesSet()");

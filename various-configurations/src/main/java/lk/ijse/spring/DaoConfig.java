@@ -1,4 +1,4 @@
 package lk.ijse.spring;
 
-public class Config1 {
+public class DaoConfig {
 }

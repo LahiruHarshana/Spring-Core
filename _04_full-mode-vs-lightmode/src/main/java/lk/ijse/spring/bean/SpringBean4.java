@@ -13,25 +13,25 @@ public class SpringBean4 implements BeanNameAware, BeanFactoryAware, Application
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("  SpringBean 4 :BeanFactoryAware.setBeanFactory()");
+        System.out.println("  SpringBean 4 :BeanFactoryAware.setBeanFactory()"+this);
     }
 
     @Override
     public void setBeanName(String name) {
-        System.out.println(" SpringBean 4 : BeanNameAware.setBeanName()");
+        System.out.println(" SpringBean 4 : BeanNameAware.setBeanName()"+this);
     }
     @Override
     public void destroy() throws Exception {
-        System.out.println(" SpringBean 4 : DisposableBean.destroy()");
+        System.out.println(" SpringBean 4 : DisposableBean.destroy()"+this);
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println(" SpringBean 4 : InitializingBean.afterPropertiesSet()");
+        System.out.println(" SpringBean 4 : InitializingBean.afterPropertiesSet()"+this);
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println(" SpringBean 4 : ApplicationContextAware.setApplicationContext()");
+        System.out.println(" SpringBean 4 : ApplicationContextAware.setApplicationContext()"+this);
     }
 }

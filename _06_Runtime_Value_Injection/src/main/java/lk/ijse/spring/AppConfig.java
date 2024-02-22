@@ -7,4 +7,5 @@ import org.springframework.stereotype.Component;
 @Configuration
 @ComponentScan
 public class AppConfig {
+
 }

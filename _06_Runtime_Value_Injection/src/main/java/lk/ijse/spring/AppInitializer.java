@@ -3,6 +3,7 @@ package lk.ijse.spring;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Map;
+import java.util.Properties;
 
 public class AppInitializer {
 
@@ -18,6 +19,10 @@ public class AppInitializer {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
 
-//        System.getProperties().forEach((k, v) -> System.out.println(k + " : " + v));
+        Properties properties = System.getProperties();
+
+        for (Map.Entry<Object, Object> entry : properties.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
     }
 }

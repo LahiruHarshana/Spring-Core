@@ -1,5 +1,6 @@
 package lk.ijse.spring.bean;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,11 @@ public class SpringBean1 {
         System.out.println("SpringBean1 Instantiated....");
         System.out.println("Name: " + name);
         System.out.println("Name2: " + name2);
+    }
+
+    @PostConstruct
+    public void init(){
+        System.out.println("SpringBean1 Initialized....");
     }
 
 }

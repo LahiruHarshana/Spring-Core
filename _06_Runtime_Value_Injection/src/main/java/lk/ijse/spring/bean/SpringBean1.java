@@ -9,7 +9,7 @@ public class SpringBean1 {
 
     @Value("Lahiru2")
     String name2;
-    public SpringBean1(@Value("Lahiru") String name) {
+    public SpringBean1(@Value("Lahiru") String name,@Value("10") int age){
         System.out.println("SpringBean1 Instantiated....");
         System.out.println("Name: " + name);
         System.out.println("Name2: " + name2);

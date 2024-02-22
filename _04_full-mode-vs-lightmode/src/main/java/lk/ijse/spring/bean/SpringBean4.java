@@ -18,7 +18,7 @@ public class SpringBean4 implements BeanNameAware, BeanFactoryAware, Application
 
     @Override
     public void setBeanName(String name) {
-
+        System.out.println("BeanNameAware.setBeanName()");
     }
 
     @Override

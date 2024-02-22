@@ -18,11 +18,11 @@ public class AppInitializer {
 //        for (Map.Entry<String, String> entry : getenv.entrySet()) {
 //            System.out.println(entry.getKey() + " : " + entry.getValue());
 //        }
+////
+//        Properties properties = System.getProperties();
 //
-        Properties properties = System.getProperties();
-
-        for (Map.Entry<Object, Object> entry : properties.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-        }
+//        for (Map.Entry<Object, Object> entry : properties.entrySet()) {
+//            System.out.println(entry.getKey() + " : " + entry.getValue());
+//        }
     }
 }

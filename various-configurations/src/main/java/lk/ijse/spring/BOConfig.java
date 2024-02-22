@@ -1,5 +1,5 @@
 package lk.ijse.spring;
 
-public class Config2 {
+public class BOConfig {
 
 }

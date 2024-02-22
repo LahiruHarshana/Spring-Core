@@ -7,7 +7,7 @@ public class AppIntializer {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.register(DaoConfig.class);
-        ctx.register(Config2.class);
+        ctx.register(BOConfig.class);
         ctx.refresh();
         ctx.registerShutdownHook();
 

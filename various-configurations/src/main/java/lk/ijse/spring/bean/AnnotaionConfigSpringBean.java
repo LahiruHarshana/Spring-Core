@@ -8,7 +8,4 @@ public class AnnotaionConfigSpringBean {
         System.out.println("Annotaion Config Spring Bean Instantiated...");
     }
 
-    public void setName(String name) {
-        System.out.println("Name : " + name);
-    }
 }

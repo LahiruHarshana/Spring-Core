@@ -10,7 +10,6 @@ public class AppConfig {
     public AppConfig() {
         System.out.println("AppConfig Instantiated via Spring");
     }
-
     @Bean
     public String name(){
         return "SpringBean1";

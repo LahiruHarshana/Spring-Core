@@ -15,7 +15,7 @@ public class AppConfig {
         return "SpringBean1";
     }
     @Bean
-    public int age(){
+    public Integer age(){
         return 10;
     }
     @Bean

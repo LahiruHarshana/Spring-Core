@@ -1,5 +1,6 @@
 package lk.ijse.spring.bean;
 
+import jakarta.annotation.Nullable;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -17,7 +18,7 @@ public class SpringBean {
 //        System.out.printf("Name: %s, Age: %d, IsMale: %b\n", name, age, isMale);
 //    }
 
-    public SpringBean(String name, int age, boolean isMale, float height) {
+    public SpringBean(String name, int age, boolean isMale,@Nullable float height) {
         this.name = name;
         this.age = age;
         this.isMale = isMale;

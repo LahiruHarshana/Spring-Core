@@ -19,7 +19,6 @@ public class AppConfig {
     public int age(){
         return 10;
     }
-
     @Bean
     public boolean isMale(){
         return true;

@@ -19,7 +19,7 @@ public class AppConfig {
         return 10;
     }
     @Bean
-    public boolean isMale(){
+    public Boolean isMale(){
         return true;
     }
 }

@@ -22,4 +22,9 @@ public class AppConfig {
     public Boolean isMale(){
         return true;
     }
+
+    @Bean
+    public Float height(){
+        return 5.5f;
+    }
 }

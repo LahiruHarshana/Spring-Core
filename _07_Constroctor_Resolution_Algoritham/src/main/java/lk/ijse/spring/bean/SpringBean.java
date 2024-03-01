@@ -7,4 +7,10 @@ public class SpringBean {
     String name;
     int age;
     boolean isMale;
+
+    public SpringBean(String name, int age, boolean isMale) {
+        this.name = name;
+        this.age = age;
+        this.isMale = isMale;
+    }
 }

@@ -13,8 +13,6 @@ public class SpringBean {
         this.age = age;
         this.isMale = isMale;
         System.out.println("SpringBean Instantiated via Spring");
-        System.out.println("Name : " + name);
-        System.out.println("Age : " + age);
-        System.out.println("isMale : " + isMale);
+        System.out.printf("Name: %s, Age: %d, IsMale: %b\n", name, age, isMale);
     }
 }
